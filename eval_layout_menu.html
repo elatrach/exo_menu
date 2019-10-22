@@ -5,17 +5,38 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Eval Layout menu</title>
 		<link rel="stylesheet" href="css/mon_site.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	</head>
 	<body>
         <nav class="nav" role="navigation">
-            <ul clas="menu">
-                <li><a href="#">Accueil</a></li>
-                <li><a href="#">Cerise</a></li>
-                <li><a href="#">Poire</a></li>
-                <li><a href="#">Pomme</a></li>
-                <li><a href="#">Tomate</a></li>
-            </ul>
+            
+            
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    
+                        <img src="/img/hamburger.png" alt="hamburger" class="hamburger">
+                    
+                </a>
+             <div id="lien">
+               <ul class ="menu">
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="#">Cerise</a></li>
+                    <li><a href="#">Poire</a></li>
+                    <li><a href="#">Pomme</a></li>
+                    <li><a href="#">Tomate</a></li>
+               </ul>
+            </div>  
+        
         </nav>
-
+        
+        <script>
+            function myFunction() {
+              var x = document.getElementById("lien");
+              if (x.style.display === "block") {
+                x.style.display = "none";
+              } else {
+                x.style.display = "block";
+              }
+            }
+        </script>
 	</body>
 </html>
